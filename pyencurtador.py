@@ -8,7 +8,6 @@ class operacao():
     def encurtador(self):
         sht = pyshorteners.Shortener()
         gerarUrl = sht.tinyurl.short(str(self.get_url.get()))
-        print(gerarUrl)
         self.saida.insert(END, gerarUrl)
 
 class Application(operacao):
